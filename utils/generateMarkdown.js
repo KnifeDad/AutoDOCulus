@@ -27,22 +27,32 @@ function generateMarkdown(data) {
 
 ${renderLicenseBadge(data.license)}
 
-## Description
+## Overview
 ${data.description}
 
-> *Project created on: ${getCurrentDate()}*
-
 ## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
+- [Overview](#overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
 - [Usage](#usage)
+- [Technologies](#technologies)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Technologies Used](#technologies-used)
 - [Questions](#questions)
 
-## Installation
+## Features
+${data.features.split(',').map(feature => `- ${feature.trim()}`).join('\n')}
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v12 or higher)
+- npm (Node Package Manager)
+
+### Installation
 \`\`\`bash
 ${data.installation}
 \`\`\`
@@ -51,9 +61,12 @@ ${data.installation}
 ${data.usage}
 
 ${data.screenshot ? `
-### Screenshot
+### Demo
 ![Application Screenshot](${data.screenshot})
 ` : ''}
+
+## Technologies
+${renderTechBadges(data.technologies)}
 
 ## License
 ${renderLicenseSection(data.license)}
@@ -61,29 +74,18 @@ ${renderLicenseSection(data.license)}
 ## Contributing
 ${data.contributing}
 
-### How to Contribute
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
-
 ## Tests
 \`\`\`bash
 ${data.tests}
 \`\`\`
 
-## Technologies Used
-${renderTechBadges(data.technologies)}
-
 ## Questions
-<img src="https://avatars.githubusercontent.com/${data.github}" alt="Profile Picture" width="100" />
-
-For additional questions, you can reach me through:
+For questions or concerns, please contact me:
 - GitHub: [${data.github}](https://github.com/${data.github})
 - Email: ${data.email}
 
 ---
-*Generated with ❤️ using the Professional README Generator*
+*Generated with ❤️ using AutoDOCulus*
 `;
 }
 
