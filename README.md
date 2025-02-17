@@ -40,7 +40,8 @@ AutoDOCulus is a command-line application that dynamically generates professiona
 ## Usage
 1. Open your terminal\n2. Navigate to the project directory\n3. Run node index.js\n4. Answer the prompts about your project\n5. Find your generated README file in the project directory
 
-
+### Demo Video
+[Watch the demo video](https://drive.google.com/file/d/1v6dhbXnMUriIFEPFtCMY4cYMiZ5L-vFM/view)
 
 ## Technologies
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
