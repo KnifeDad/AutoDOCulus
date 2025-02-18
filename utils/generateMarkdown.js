@@ -61,8 +61,13 @@ ${data.installation}
 ${data.usage}
 
 ${data.screenshot ? `
-### Demo
+### Screenshot
 ![Application Screenshot](${data.screenshot})
+` : ''}
+
+${data.videoDemo ? `
+### Demo Video
+[Watch the demo video](${data.videoDemo})
 ` : ''}
 
 ## Technologies

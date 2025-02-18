@@ -56,6 +56,11 @@ const questions = [
         message: 'Enter the path to your application screenshot (optional):',
     },
     {
+        type: 'input',
+        name: 'videoDemo',
+        message: 'Enter the URL of your demo video (optional):',
+    },
+    {
         type: 'checkbox',
         name: 'technologies',
         message: 'Select the technologies used in your project:',
